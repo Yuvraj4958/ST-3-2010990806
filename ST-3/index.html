@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST-3</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="inOut">
+        <input style="color: white;" class="io" id="in" placeholder="ENTER YOUR WEIGHT(KGs) ">
+        <div style="color: white;" class="io" >Your Weight is:</div>
+        <div style="color: white;" class="io" id="out"></div>
+        <div style="color: white;" class="it" >Select A Planet</div>
+    </div>
+    <div id="planet">
+        <img src="image/sun-removebg-preview.png" onclick="sun()">
+        <img src="image/mercury-removebg-preview.png" onclick="mer()">
+        <img src="image/venus-removebg-preview.png" onclick="ven()">
+        <img src="image/earth-removebg-preview.png" onclick="earth()">
+        <img src="image/mars-removebg-preview.png" onclick="mars()">
+        <img src="image/jupiter-removebg-preview.png" onclick="jupiter()">
+        <img src="image/saturn-removebg-preview.png" onclick="sat()">
+        <img src="image/uranus-removebg-preview.png" onclick="ura()">
+        <img src="image/neptune-removebg-preview.png" onclick="nep()">
+        <img src="image/pluto-removebg-preview.png" onclick="pluto()">
+    </div> 
+    <script>
+        function sun(){
+            let a = document.getElementById("in").value;
+            document.getElementById("out").innerHTML=27.01*a;
+        }
+        function mer(){
+            let a = document.getElementById("in").value;
+            document.getElementById("out").innerHTML=a*0.38;
+        }
+        function ven(){
+            let a = document.getElementById("in").value;
+            document.getElementById("out").innerHTML=0.91*a;
+        }
+        function earth(){
+            let a = document.getElementById("in").value;
+            document.getElementById("out").innerHTML=1*a;
+        }
+        function mars(){
+            let a = document.getElementById("in").value;
+            document.getElementById("out").innerHTML=0.166*a;
+        }
+        function jupiter(){
+            let a = document.getElementById("in").value;
+            document.getElementById("out").innerHTML=0.38*a;
+        }
+        function sat(){
+            let a = document.getElementById("in").value;
+            document.getElementById("out").innerHTML=1.06*a;
+        }
+        function ura(){
+            let a = document.getElementById("in").value;
+            document.getElementById("out").innerHTML=0.92*a;
+        }
+        function nep(){
+            let a = document.getElementById("in").value;
+            document.getElementById("out").innerHTML=1.19*a;
+        }
+        function pluto(){
+            let a = document.getElementById("in").value;
+            document.getElementById("out").innerHTML=0.06*a;
+        }
+    </script>
+</body>
+</html>
